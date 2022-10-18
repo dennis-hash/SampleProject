@@ -1,0 +1,110 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{natbib}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[nottoc,numbib]{tocbibind}
+\hypersetup{
+    colorlinks=false, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+\graphicspath{ {.} }
+
+
+\title{Project Proposal}
+\author{Maluki Muthusi}
+\date{November 2021}
+
+
+\begin{document}
+
+% Title page
+\include{title_page.tex}
+
+% Declaration
+\section{Declaration}
+\input{declaration.tex}
+\newpage
+
+% Acknowledgement
+\section{Acknowledgement}
+\input{acknowledgement.tex}
+\newpage
+
+
+
+% Table of Contents
+\renewcommand*\contentsname{\section{Table of Contents}}
+\input{toc.tex}
+
+% List of figures
+\section{List of Figures}
+
+% List of tables
+\section{List of Tables}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Introduction
+\chapter{Introduction}
+\input{introduction.tex}
+
+% Background
+\section{Background}
+\input{background.tex}
+
+% Problem Statement
+\section{Problem Statement}
+\input{problem_statement.tex}
+
+% Objectives
+\section{Objectives}
+\input{objectives.tex}
+
+% Justification
+\section{Justification}
+\input{justification.tex}
+
+% Scope
+\section{Scope}
+\input{scope.tex}
+
+% Project Constraints
+\section{Project Constraints}
+\input{constraint.tex}
+
+
+%Literature Review
+\chapter{Literature Review}
+
+% Related Work
+\section{Related Work}
+\input{relatedwork.tex}
+
+% System Analysis and Design
+\chapter{System Analysis And Design}
+
+\section{System Development and Methodology}
+\input{development.tex}
+
+\section{System Modules}
+\input{modules.tex}
+
+\section{Technology}
+\input{technology.tex}
+
+
+
+% Schedule
+\input{schedule.tex}
+
+% Bibliography
+\nocite{*}
+
+\bibliographystyle{agsm}
+\bibliography{main}
+
+\end{document}
